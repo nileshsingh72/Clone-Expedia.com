@@ -1,0 +1,51 @@
+/* sign up page  && sign in page css here------------- */
+
+h1{
+    font-family: 'Blinker', sans-serif;
+    font-size: 25px;
+}
+#container{
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    }
+#top{
+    width: auto;
+    text-align: left;
+    padding-left: 10px;
+     border-bottom: 0.5px solid rgb(206, 201, 201);
+     display: flex;
+     align-items: center;
+    }
+img{
+    width: 10%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+input{
+    display: block;
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+#btn{
+    height: 40px;
+    padding: 5px;
+    width: 102%;
+    color: white;
+    background-color: #3662D8;
+}
+p{
+    font-size: 14px;
+    line-height: 20px;
+}
+a{
+    text-decoration: none;
+
+}
+#last{
+    text-align: center;
+}
