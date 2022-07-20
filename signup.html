@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="./sign.css">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300&family=Rubik+Moonrocks&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+         /* <!-- media queries for medium screen here --> */
+
+         @media all and (min-width: 481px) and (max-width: 780px) {
+            img{
+                width: 17%;
+            }
+            h1{
+                font-size: 20px;
+            }
+            input{
+                width: 90%;
+                height: 25px;
+                margin-bottom: 10px;
+            }
+            #btn{
+                width: 92%;
+            }
+            p{
+                font-size: 10px;
+                line-height: 15px;
+            }
+            
+         }
+
+         /* media queries for small screen here */
+
+         @media all and (min-width: 320px) and (max-width: 480px) {
+            img{
+                width: 25%;
+            }
+            h1{
+                font-size: 25px;
+            }
+            input{
+                width: 80%;
+                height: 25px;
+                margin-bottom: 7px;
+            }
+            #btn{
+                width: 82%;
+            }
+            p{
+                font-size: 10px;
+                line-height: 14px;
+            }
+            #desc{
+                width: 80%;
+            }
+            
+         }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <i class="fa-solid fa-arrow-left"></i>
+        <img src="https://www.expedia.com/_dms/interstitial/logo.svg?locale=en_US&siteid=1" alt="logo">
+    </div>
+
+    <div id="container">
+        <h1>Create an account</h1>
+        <form action="">
+            <input type="email" name="" id="email" placeholder="Email address">
+            <input type="text" name="" id="Fname" placeholder="First name">
+            <input type="text" name="" id="Lname" placeholder="Last name">
+            <input type="text" name="" id="password" placeholder="Password">
+            <div id="desc">
+                <p>By creating an account, I agree to the Expedia <a href="https://www.expedia.com/terms">Terms and Conditions, </a><a href="https://www.expedia.com/privacy">Privacy Statement </a>and <a href="https://www.expedia.com/rewards/terms">Expedia Rewards Terms and Conditions.</a> </p>
+            </div>
+            <input type="submit" value="Continue" id="btn">
+            <p id="last">Already have an account? <a href="https://www.expedia.com/login?%20=&enable_login=true&uurl=e3id%3Dredr%26rurl%3D%2F%3Flogout%3D1">Sign in</a></p></div>
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- -- // sign up script here --> -->
+<script>
+
+  let form = document.querySelector("form").addEventListener("submit" , storage)
+
+ let person_signup_data =  JSON.parse(localStorage.getItem("person_signup_data"))  || [];
+ function storage (event){
+    event.preventDefault()
+    let form  = document.querySelector("form") 
+    let obj = {
+        email: form.email.value,
+        firstname: form.Fname.value,
+        lastname: form.Lname.value,
+        password: form.password.value
+    }
+    person_signup_data.push(obj)
+    console.log(person_signup_data)
+    localStorage.setItem("person_signup_data" , JSON.stringify(person_signup_data))
+
+ }
+</script>
