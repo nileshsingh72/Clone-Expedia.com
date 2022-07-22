@@ -78,7 +78,7 @@
                 <p>By creating an account, I agree to the Expedia <a href="https://www.expedia.com/terms">Terms and Conditions, </a><a href="https://www.expedia.com/privacy">Privacy Statement </a>and <a href="https://www.expedia.com/rewards/terms">Expedia Rewards Terms and Conditions.</a> </p>
             </div>
             <input type="submit" value="Continue" id="btn">
-            <p id="last">Already have an account? <a href="https://www.expedia.com/login?%20=&enable_login=true&uurl=e3id%3Dredr%26rurl%3D%2F%3Flogout%3D1">Sign in</a></p></div>
+            <p id="last">Already have an account? <a href="signin.html">Sign in</a></p></div>
         </form>
     </div>
 </body>
@@ -99,9 +99,14 @@
         lastname: form.Lname.value,
         password: form.password.value
     }
-    person_signup_data.push(obj)
-    console.log(person_signup_data)
-    localStorage.setItem("person_signup_data" , JSON.stringify(person_signup_data))
+    
+    if(obj.firstname=="" || obj.lastname=="" || obj.password=="" || obj.email==''){
+        alert("Please fill all fields");
+    }else{
+        person_signup_data.push(obj)
+        localStorage.setItem("person_signup_data" , JSON.stringify(person_signup_data))
+        window.location.href="signin.html"
+    }
 
  }
 </script>
