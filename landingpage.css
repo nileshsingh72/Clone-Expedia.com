@@ -1,0 +1,341 @@
+/* nav bar css here */
+
+#navtop{
+    color: white;
+    background-color: #343b53;
+    font-size: 12px;
+}
+#navtop > p {
+    padding: 10px;
+}
+#navtop > p > a {
+    color: white;
+}
+#nav{
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+#nav > div {
+    border: 1px solid blue;
+    margin: 20px 0px;
+    margin-left: -10px;
+}
+
+#logocompany{
+    width: 50%;
+    display: block;
+}
+#icons{
+    border: 1px solid gray;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+#more{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-around;
+}
+/* nav bar css ends here */
+
+/* header portion css here */
+#main{
+    width: 80%;
+    margin: 30px auto auto auto;
+    border: 1px solid gray;
+    height: 250px;
+    border-radius: 10px;
+}
+#top-line{
+    width: 95%;
+    margin: auto;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: center;
+}
+#content{
+    width: 50%;
+    padding: 10px 0px ;
+    display: flex;
+    justify-content: space-between;
+}
+#details{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: end;
+}
+#locations{
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,56% 20% 20%);
+
+}
+#locations>div:nth-child(1){
+border: 0.5px solid grey;
+border-radius: 5px;
+}
+.small{
+    display: flex;
+}
+#destinations{
+    display: grid;
+    grid-template-columns: repeat(3 ,50% 23% 23%)
+}
+#destinations > div{
+    border: 1px solid blue;
+    padding: 0px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#destinations > div:nth-child(1) {
+margin-left: 40px;
+margin-right: 10px;
+}
+
+#destinations > div:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#destinations > div:nth-child(3) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.child > p {
+    margin-top: -15px;
+    margin-bottom: -15px;
+}    
+#going{
+    border: 1px solid teal;
+}
+
+#destinations > p {
+    margin-left: 10px;
+}
+#button{
+    width: 90%;
+    border: 0.5px solid red;
+    margin: 50px auto auto auto;
+    display: flex;
+    justify-content: center;
+
+}
+button{
+    background-color: #3662D8;
+    padding: 10px 40px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#overview{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    border: 1px solid black;
+}
+#leftimg{
+    width: 100%;
+}
+#rightimg{
+    width: 20%;
+}
+
+/* div with person image  */
+#middle{
+    width: 80%;
+    margin: 50px auto auto auto;
+}
+#middle>img{
+ width: 100%;
+ border-radius: 5px;
+}
+
+/* <!-- heading here  --> */
+#secheading{
+    width: 80%;
+    margin: 20px auto auto auto;
+}
+#updates{
+    width: 80%;
+    margin: 20px auto auto auto;
+    display: grid;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+#updates > div {
+    border-radius: 5px;
+    width: 30%;
+    padding: 0px 10px;
+    border: 1px solid blue;
+}
+#updates > div > h3 {
+margin-top: 10px;
+}
+#updates > div > p {
+font-size: 12px;
+margin-top: -12px;
+color: rgb(81, 80, 80);
+}
+
+/* adverstisement part here */
+#adds{
+    width: 80%;
+    margin: 20px auto auto auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr 1fr);
+    border: 0.5px solid grey;
+    height: 150px;
+}
+#adds >   img {
+width: 100%;
+}
+
+/* three cards here  */
+#threecards{
+    width: 80%;
+    margin: 30px auto auto auto;
+    display: flex;
+    justify-content: space-between;
+}
+#threecards > div {
+    width: 32%;
+    border: 1px solid red;
+}
+#threecards > div > h6 {
+    margin-top: 8px;
+    padding: 0px 8px;
+    color: grey;
+}
+#threecards > div > p {
+    margin-top: -20px;
+    padding: 0px 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+#threecards > div > img {
+width: 100%;
+border-radius: 7px;
+}
+
+/* two cards are here */
+
+#twocards{
+    width: 80%;
+    margin: 30px auto auto auto;
+    display: flex;
+    justify-content: space-between;
+}
+#twocards > div {
+    border: 1px solid green;
+    width: 48%;
+}
+#twocards > div > img {
+    width: 100%;
+    border-radius: 5px;
+}
+#twocards > div > h6 {
+    margin-top: 8px;
+    padding: 0px 8px;
+    color: grey;
+}
+#twocards > div > p {
+    margin-top: -20px;
+    padding: 0px 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+#bookday{
+    width: 80%;
+    margin: auto;
+    border: 0.5 solid brown;
+
+}
+#bookday > div{
+    width: 80%;
+    margin: 30px auto auto auto;
+    border: 0.5 solid blue;
+}
+#bookday > div > img {
+width: 100%;
+}
+/* adds2 here  */
+#add2{
+    width: 80%;
+    margin: 30px auto auto auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    padding-bottom: -30px;
+}
+#image1 > img{
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+}
+#image2 > img{
+    width: 80%;
+    margin-left: 48px;
+}
+#add2 > div:nth-child(1){
+/* width: 50%; */
+}
+#add2 > div:nth-child(2){
+/* width: 40%; */
+}
+
+/* footer here */
+#footer{
+    width: 80%;
+    margin: 30px auto auto auto;
+    border-bottom: 1px solid grey;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2, auto auto);
+    gap: 10px;
+}
+#footer > div >h3{
+font-size: 15px;
+}
+#footer > div > img {
+margin-top: 10px;
+}
+#footer > div > h4 {
+    margin-top: 4px;
+}
+#footer > div{
+    border: 0.5px solid brown;
+}
+#footer > div > a{
+display: block;
+margin-bottom: 10px;
+font-size: 12px;
+text-decoration: none;
+}
+
+#footerend{
+    width: 80%;
+    margin: auto auto auto auto;
+    /* border: 1px solid black; */
+    font-size: 12px;
+    color: rgb(30, 23, 23);
+
+}
+#footerend > div > p{
+    text-align: center;
+}
+ 
+/* hover and effects here  */
+.hoverbtn :hover{
+
+color: blue;
+}
