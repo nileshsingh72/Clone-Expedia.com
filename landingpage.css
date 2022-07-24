@@ -1,5 +1,4 @@
 /* nav bar css here */
-
 #navtop{
     color: white;
     background-color: #343b53;
@@ -12,23 +11,21 @@
     color: white;
 }
 #nav{
-    border: 1px solid grey;
+    border-bottom: 1px solid grey;
     display: flex;
+    margin-top: -20px;
     justify-content: space-around;
     color: black;
 }
 #nav > div {
-    border: 1px solid blue;
     margin: 20px 0px;
     margin-left: -10px;
 }
-
 #logocompany{
     width: 50%;
     display: block;
 }
 #icons{
-    border: 1px solid gray;
     display: flex;
     width: 50%;
     align-items: center;
@@ -47,7 +44,7 @@
     width: 80%;
     margin: 30px auto auto auto;
     border: 1px solid gray;
-    height: 250px;
+    height: auto;
     border-radius: 10px;
 }
 #top-line{
@@ -74,7 +71,6 @@
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3,56% 20% 20%);
-
 }
 #locations>div:nth-child(1){
 border: 0.5px solid grey;
@@ -88,13 +84,12 @@ border-radius: 5px;
     grid-template-columns: repeat(3 ,50% 23% 23%)
 }
 #destinations > div{
-    border: 1px solid blue;
+    border: 1px solid grey;
     padding: 0px 10px;
     border-radius: 5px;
     display: flex;
     align-items: center;
 }
-
 #destinations > div:nth-child(1) {
 margin-left: 40px;
 margin-right: 10px;
@@ -121,11 +116,9 @@ margin-right: 10px;
 }
 #button{
     width: 90%;
-    border: 0.5px solid red;
-    margin: 50px auto auto auto;
+    margin: 25px;
     display: flex;
     justify-content: center;
-
 }
 button{
     background-color: #3662D8;
@@ -147,17 +140,35 @@ button{
 #rightimg{
     width: 20%;
 }
-
 /* div with person image  */
-#middle{
+#middleaddvertisement {
+    background-image: url("https://a.travel-assets.com/travel-assets-manager/5348/MTT-HP-Hero-D-928x398.jpg");
+    background-position: center;
+    background-size: cover;
     width: 80%;
-    margin: 50px auto auto auto;
+    height: 400px;
+    margin: 30px auto auto auto;
+    border-radius: 7px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
-#middle>img{
- width: 100%;
- border-radius: 5px;
+#middleaddvertisement > div {
+    width: 40%;
+    color: black;
+    margin-left: 40px;
 }
-
+#middleaddvertisement > div > button {
+border: none;
+padding: 14px;
+border-radius: 7px;
+background-color: #3662D8;
+color: white;
+}
+#middleaddvertisement > div > h1 {
+font-family: 'Blinker', sans-serif;
+font-size: 40px;
+}
 /* <!-- heading here  --> */
 #secheading{
     width: 80%;
@@ -176,7 +187,7 @@ button{
     border-radius: 5px;
     width: 30%;
     padding: 0px 10px;
-    border: 1px solid blue;
+    border: 1px solid grey;
 }
 #updates > div > h3 {
 margin-top: 10px;
@@ -186,20 +197,6 @@ font-size: 12px;
 margin-top: -12px;
 color: rgb(81, 80, 80);
 }
-
-/* adverstisement part here */
-#adds{
-    width: 80%;
-    margin: 20px auto auto auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1.5fr 1fr);
-    border: 0.5px solid grey;
-    height: 150px;
-}
-#adds >   img {
-width: 100%;
-}
-
 /* three cards here  */
 #threecards{
     width: 80%;
@@ -209,7 +206,6 @@ width: 100%;
 }
 #threecards > div {
     width: 32%;
-    border: 1px solid red;
 }
 #threecards > div > h6 {
     margin-top: 8px;
@@ -226,9 +222,7 @@ width: 100%;
 width: 100%;
 border-radius: 7px;
 }
-
 /* two cards are here */
-
 #twocards{
     width: 80%;
     margin: 30px auto auto auto;
@@ -236,7 +230,6 @@ border-radius: 7px;
     justify-content: space-between;
 }
 #twocards > div {
-    border: 1px solid green;
     width: 48%;
 }
 #twocards > div > img {
@@ -258,7 +251,6 @@ border-radius: 7px;
     width: 80%;
     margin: auto;
     border: 0.5 solid brown;
-
 }
 #bookday > div{
     width: 80%;
@@ -292,7 +284,6 @@ width: 100%;
 #add2 > div:nth-child(2){
 /* width: 40%; */
 }
-
 /* footer here */
 #footer{
     width: 80%;
@@ -312,30 +303,113 @@ margin-top: 10px;
 #footer > div > h4 {
     margin-top: 4px;
 }
-#footer > div{
-    border: 0.5px solid brown;
-}
 #footer > div > a{
 display: block;
 margin-bottom: 10px;
 font-size: 12px;
+color: rgb(27, 27, 228);
 text-decoration: none;
 }
-
 #footerend{
     width: 80%;
     margin: auto auto auto auto;
-    /* border: 1px solid black; */
     font-size: 12px;
     color: rgb(30, 23, 23);
-
 }
 #footerend > div > p{
     text-align: center;
 }
- 
-/* hover and effects here  */
-.hoverbtn :hover{
-
-color: blue;
+/* last part changes of div here  */
+#mainbottom{
+    width: 80%;
+    display: grid;
+    margin: 30px auto auto auto;
+    grid-template-columns: repeat(3,30% 50% 18%);
+    gap: 0px 10px;
+}
+#mainbottom > div > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+#mainbottomcontentinputs > h5{
+    margin: 10px 0px;
+}
+#mainbottom > div > div > p{
+    font-size: 12px;
+}
+#mainbottomcontent{
+    padding: 0px 10px;
+}
+#checks{
+    display: flex;
+    justify-content: space-between;
+}
+#checks > input{
+    padding: 7px 10px ;
+    width: 30%;
+    border: 0.5 solid grey;
+    border-radius: 5px;
+}
+#checks > button{
+    padding: 10px 10px ;
+    width: 27%;
+    border-radius: 5px;
+    background-color: #3662D8;
+    border: none;
+    color: white;
+}
+#mainbottomcontent > div:nth-child(2) > p {
+    font-size: 12px;
+}
+#mainbottomcontent > div:nth-child(4) > p {
+    font-size: 10px;
+}
+#mainbottom > div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mainbottom > div:nth-child(3) > img {
+    width: 80%;
+    height: 70%;
+}
+/* <!-- advertisement II here --> */
+#addstwice{ 
+    width:80%;
+    margin: 30px auto auto auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}                   
+ #addstwice  :nth-child(2) {
+    width: 30%;
+}
+#addstwice  :nth-child(2) > img{
+    width: 100%;
+    height: 100%;
+}
+#addstwice_desc{
+    background-image: url("https://tpc.googlesyndication.com/simgad/8962360423679294823?");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 68%;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#addstwice_desc > h3 {
+ color: white;
+ width: 100%;
+ padding: 0px 15px; 
+ margin-bottom: -10px;  
+ font-weight: lighter;
+}
+#addstwice_desc > h5 {
+ color: white;
+ width: 100%;
+ font-weight: lighter;
+ padding: 0px 15px; 
 }
