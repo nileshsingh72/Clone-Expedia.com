@@ -63,7 +63,7 @@
 </head>
 <body>
     <div id="top">
-        <i class="fa-solid fa-arrow-left"></i>
+        <i  id="backbtn"  class="fa-solid fa-arrow-left"></i>
         <img src="https://www.expedia.com/_dms/interstitial/logo.svg?locale=en_US&siteid=1" alt="logo">
     </div>
 
@@ -84,29 +84,4 @@
 </body>
 </html>
 
-<!-- -- // sign up script here --> -->
-<script>
-
-  let form = document.querySelector("form").addEventListener("submit" , storage)
-
- let person_signup_data =  JSON.parse(localStorage.getItem("person_signup_data"))  || [];
- function storage (event){
-    event.preventDefault()
-    let form  = document.querySelector("form") 
-    let obj = {
-        email: form.email.value,
-        firstname: form.Fname.value,
-        lastname: form.Lname.value,
-        password: form.password.value
-    }
-    
-    if(obj.firstname=="" || obj.lastname=="" || obj.password=="" || obj.email==''){
-        alert("Please fill all fields");
-    }else{
-        person_signup_data.push(obj)
-        localStorage.setItem("person_signup_data" , JSON.stringify(person_signup_data))
-        window.location.href="signin.html"
-    }
-
- }
-</script>
+ <script src="./index.js"></script>

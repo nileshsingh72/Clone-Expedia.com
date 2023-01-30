@@ -1,69 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-IN page</title>
-    <link rel="stylesheet" href="./index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300&family=Rubik+Moonrocks&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-</head>
-<style>
-
-</style>
-<body>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@300&family=Rubik+Moonrocks&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <style></style>
+  <body>
     <div id="top">
-        <i class="fa-solid fa-arrow-left"></i>
-        <img src="https://www.expedia.com/_dms/interstitial/logo.svg?locale=en_US&siteid=1" alt="logo">
+      <i id="backbtn" class="fa-solid fa-arrow-left"></i>
+      <img
+        src="https://www.expedia.com/_dms/interstitial/logo.svg?locale=en_US&siteid=1"
+        alt="logo"
+      />
     </div>
 
     <div id="container">
-        <h1>Sign in</h1>
-        <form action="">
-            <input type="email" name="" id="logemail" placeholder="Email address">
-            <input type="text" name="" id="logpassword" placeholder="Password">
-            <p>By creating an account, I agree to the Expedia <a href="https://www.expedia.com/terms">Terms and Conditions, </a><a href="https://www.expedia.com/privacy">Privacy Statement </a>and <a href="https://www.expedia.com/rewards/terms">Expedia Rewards Terms and Conditions.</a> </p>
-            <input type="submit" value="Sign in" id="btn">
-            <p id="last">Already have an account? <a href="index.html">Create one</a></p>
-        </form>
+      <h1>Sign in</h1>
+      <form action="">
+        <input type="email" name="" id="logemail" placeholder="Email address" />
+        <input type="text" name="" id="logpassword" placeholder="Password" />
+        <p>
+          By creating an account, I agree to the Expedia
+          <a href="https://www.expedia.com/terms">Terms and Conditions, </a
+          ><a href="https://www.expedia.com/privacy">Privacy Statement </a>and
+          <a href="https://www.expedia.com/rewards/terms"
+            >Expedia Rewards Terms and Conditions.</a
+          >
+        </p>
+        <input type="submit" value="Sign in" id="btn" />
+        <p id="last">
+          Already have an account? <a href="index.html">Create one</a>
+        </p>
+      </form>
     </div>
-</body>
+  </body>
 </html>
-<!-- js of sign in here -->
-<script>
-
-let get_person_signup_data =  JSON.parse(localStorage.getItem("person_signup_data")) || [];
-
-document.querySelector("form").addEventListener("submit", siginin)
-
-function siginin(event) {
-event.preventDefault();
- 
-let form = document.querySelector("form");
-let objsignin = {
-    email: form.logemail.value,
-    password: form.logpassword.value
-}
-
-if(objsignin.email == ""  || objsignin.password == ""){
-    alert("Please fill inputs")
-    return;
-}
-
-
- let flag =false;
-get_person_signup_data.forEach(function(ele){
-    if(objsignin.email == ele.email  && objsignin.password == ele.password) { 
-    flag = true;
-    }
-})
-
-if(flag == true) {
-    alert("login successfull");
-    window.location.href = "landingpage.html";
-}else{
-    alert("Please provide a valid credentials!");   
-}
-}
-</script>
+<script src="./signin.js"></script>
